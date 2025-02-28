@@ -1,0 +1,145 @@
+                /* Reset básico */
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: 'Arial', sans-serif;
+                }
+                body {
+                    font-family: 'Roboto', sans-serif;
+                    line-height: 1.6;
+                    color: #333;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f9f9f9;
+                }
+                header {
+                    background: #007BFF;
+                    color: white;
+                    padding: 20px;
+                    text-align: center;
+                }
+                .container  {
+                    padding: 20px;
+                    max-width: 800px;
+                    margin: 0 auto;
+                }
+                h2 {
+                    color: #007BFF;
+                }
+                ul {
+                    list-style-type: disc;
+                    margin-left: 20px;
+                }
+                .service {
+                    background: white;
+                    padding: 15px;
+                    margin: 10px 0;
+                    border-radius: 8px;
+                    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                }
+                /* Contenido principal */
+                .main-content {
+                    padding: 2rem 1rem;
+                }
+        
+        
+                /* Estilos generales para la barra de navegación */
+                .navbar {
+                    background-color: #343a4000 !important; /* Fondo oscuro */
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+                }
+        
+                .navbar-brand {
+                    font-size: 1.5rem; /* Tamaño del logo */
+                    font-weight: bold; /* Texto en negrita */
+                    color: #ffffff !important; /* Color blanco */
+                }
+        
+        
+                .navbar-brand:hover {
+                    color: #007bff !important; /* Color azul al pasar el mouse */
+                }
+        
+                .nav-link {
+                    color: #ffffff !important; /* Color blanco para los enlaces */
+                    font-size: 1.1rem; /* Tamaño del texto */
+                    margin: 0 10px; /* Espaciado entre enlaces */
+                    padding: 8px 15px; /* Espaciado interno */
+                    border-radius: 5px; /* Bordes redondeados */
+                    transition: all 0.3s ease; /* Transición suave */
+                }
+        
+                .nav-link:hover {
+                    background-color: #007bff; /* Fondo azul al pasar el mouse */
+                    color: #ffffff !important; /* Texto blanco */
+                }
+        
+                .btn-primary:hover {
+                    background-color: #0056b3; /* Fondo azul oscuro al pasar el mouse */
+                }
+        
+        
+                /* Estilo para el botón del menú en móviles */
+                .navbar-toggler {
+                    border: none; /* Sin borde */
+                }
+        
+                .navbar-toggler-icon {
+                    background-color: #ffffff; /* Color blanco */
+                }
+        
+                /* Estilo para el menú desplegable en móviles */
+                .navbar-collapse {
+                    background-color: #343a40; /* Fondo oscuro */
+                    padding: 10px; /* Espaciado interno */
+                    border-radius: 5px; /* Bordes redondeados */
+                }
+                /* Media Queries para responsive */
+                @media (min-width: 768px) {
+                    nav ul {
+                        flex-direction: row;
+                        justify-content: center;
+                    }
+        
+                    .content-wrapper {
+                        display: flex;
+                        gap: 2rem;
+                    }
+        
+                    .main-content {
+                        flex: 3;
+                    }
+        
+                    .sidebar {
+                        flex: 1;
+                        min-width: 250px;
+                    }
+                }
+        
+                @media (min-width: 1024px) {
+                    .card-container {
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+                }
+        
+                
+                /* Footer */
+                footer {
+                    background: #333;
+                    color: white;
+                    padding: 2rem 1rem;
+                    text-align: center;
+                }
+        
+                .social-links {
+                    display: flex;
+                    justify-content: center;
+                    gap: 1.5rem;
+                    margin: 1rem 0;
+                }
+        
+                .social-links a {
+                    color: white;
+                    font-size: 2rem;
+                }
